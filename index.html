@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://allfont.net/allfont.css?fonts=mail-ray-stuff" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyC2TSdIVSdw9l6HU7TwIAZhE_elX04_RrI",
+        authDomain: "todo-firebase-20096.firebaseapp.com",
+        databaseURL: "https://todo-firebase-20096.firebaseio.com",
+        projectId: "todo-firebase-20096",
+        storageBucket: "todo-firebase-20096.appspot.com",
+        messagingSenderId: "242132743484",
+        appId: "1:242132743484:web:9ae1b14e263d54cd0dda39",
+        measurementId: "G-Q77R1BNV5T"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      
+    </script>
+  </head>
+<body>
+  
+    
+    <div class='box'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+      </div>
+
+    
+
+<div id="main">
+<h1 class="heading">TODO APPLICATION</h1>
+<h4 id="heading2" style="color: white;text-shadow: 5px 6px 5px black; font-family: sans-serif; ">Welcome to my To-Do list application</h4>
+<p style="color: rgb(255, 255, 255);font-stretch: extra-condensed ; text-shadow: 2px 5px 6px rgb(98, 97, 97)">What are you going to do today?</p>
+<input id="input" type="text" placeholder="Enter To Do....">
+
+<button id="post" onclick="input_text()">Add Task</button>
+
+<button id="del_all" onclick="deleteAll()"><i class="fa fa-trash"></i> Delete all</button>
+
+
+
+<div class="dateAndClear">
+  <div id="date"></div>
+</div>
+
+
+<br>
+<div id="table">
+  <ul id="list_item">
+
+  </ul>
+</div>
+            <script src="app.js"></script>
+      </body>
+        </html>
+
+
